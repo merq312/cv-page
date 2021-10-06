@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                 <a href="https://github.com/merq312/pizza-stack">
                   pizza-stack: Website for a fictional store. Made on NextJS
                   with Redux for state management and Magic Auth for
-                  authentication.{' '}
+                  authentication.
                 </a>
               </li>
               <li>
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
             <ul>
               <li>
                 <a href="https://github.com/merq312/wasm-game-of-life">
-                  wasm-game-of-life: Conway's game of life that runs on your
+                  wasm-game-of-life: Conway&apos;s game of life that runs on your
                   browser. Using rust+wasm.
                 </a>
               </li>
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
               <li>
                 <a href="">
                   Natours: Part of a Node backend course. NodeJS, Express,
-                  MongoDB
+                  MongoDB, implements a REST API
                 </a>
               </li>
               <li>
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
             IT Business Analysis Graduate Certificate
           </div>
           <div className={styles.college}>Cambrian College</div>
-          <div className={styles.highlights}>President's Honor Roll</div>
+          <div className={styles.highlights}>President&apos;s Honor Roll</div>
         </div>
         <div className={styles.list_item}>
           <div className={styles.course}>Bachelor of Science (Physics)</div>
@@ -141,3 +141,9 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+// TODO
+// Mobile media queries
+// Host the missing projects
+// Put something in the footer
+// Link the sources for courses
