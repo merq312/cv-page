@@ -4,12 +4,10 @@ const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.content}>
       <h1>Contact</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        adipisci similique tempora, culpa incidunt reiciendis itaque esse
-        provident iste perspiciatis! Blanditiis laboriosam et voluptatem ex
-        unde. Esse blanditiis quia id.
-      </p>
+      <ul>
+        <li>Email</li>
+        <li>LinkedIn</li>
+      </ul>
     </div>
     <div className={styles.vert_line}>&nbsp;</div>
     <div className={styles.content}>

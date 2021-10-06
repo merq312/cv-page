@@ -4,35 +4,100 @@ import styles from '../styles/Home.module.scss'
 const Home: NextPage = () => {
   return (
     <main className={styles.main}>
-      <div>
-        <h1 className={styles.title}>Welcome to Next.js!</h1>
+      <div className={styles.main_section}>
+        <h1 className={styles.title}>...wants to get paid to write software</h1>
+        <h2 className={styles.subtitle}>
+          Frontend, backend, and systems programming
+        </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-          consectetur quis molestias pariatur itaque similique libero esse
-          eveniet maxime, neque reprehenderit praesentium eum aliquid obcaecati
-          explicabo distinctio veniam dolore soluta!
+          Currently lives in Ontario, Canada 🍁. Previously in Australia 🦘 and
+          Sri Lanka 🐘.
           <br />
+          I am currently playing around with Rust 🦀 and web assembly.
+          <br />I am familiar with languages (and frameworks):
+          <ul>
+            <li>
+              Typescript, Javascript (NextJS, React, Redux, Node, Express),
+            </li>
+            <li>C++ (Qt, SDL),</li>
+            <li>MongoDB, SQLite, MySQL</li>
+            <li>HTML, CSS, SCSS.</li>
+          </ul>
+          I have <i>some</i> knowledge of Python, Lua, Bash scripting, C, and C#
+          (have used these for something or the other).
           <br />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-          eveniet adipisci itaque ipsum vitae consequuntur voluptates eius
-          deleniti doloribus temporibus excepturi rerum quo, modi, beatae,
-          cumque perspiciatis eos. Eius, dicta.
+          I've spent quite sometime with Docker and Linux operating systems
+          (Arch, Fedora, Ubuntu).
+          <br />
+          I have a degree in Physics (LaTeX, Matlab, lots of math, computational
+          physics).
+          <br />
+          I also took a post-graduate course in IT Business Analysis (software
+          project management, software testing, requirements specification,
+          enterprise software, UML, BPM, Azure, and more).
+          <br />
+          <br />I can make sushi 🍣
         </p>
       </div>
 
       <div className={styles.twin_section}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, non
-          quaerat explicabo, atque amet sed culpa alias architecto, vel ab
-          possimus iste labore neque dolorem iusto sit fuga cum? Obcaecati!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam
-          vitae vel, libero perspiciatis magni accusantium placeat, sequi saepe
-          exercitationem tempore debitis dolorem quod culpa deleniti minima
-          suscipit alias amet.
-        </p>
+        <div>
+          <h2>Things I made</h2>
+          <p>
+            <ul>
+              <li>
+                <a href="https://github.com/merq312/cv-page">This website!</a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/wasm-mandelbrot">
+                  wasm-mandelbrot
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/qt_music_player">
+                  qt-music player
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/pizza-stack">pizza-stack</a>
+              </li>
+              <li>
+                <a href="#">cdcl (c declaration parser)</a>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h2>
+            Some more stuff I made
+            <br />
+            <span>(as part of tutorials or courses)</span>
+          </h2>
+          <p>
+            <ul>
+              <li>
+                <a href="https://github.com/merq312/wasm-game-of-life">
+                  wasm-game-of-life
+                </a>
+              </li>
+              <li>
+                <a href="">crwn clothing</a>
+              </li>
+              <li>
+                <a href="">natours</a>
+              </li>
+              <li>
+                <a href="">nexter</a>
+              </li>
+              <li>
+                <a href="">c++ treeset</a>
+              </li>
+            </ul>
+          </p>
+        </div>
       </div>
+      <h1 className={styles.title}>Academic Record</h1>
+      <p>Soon™️</p>
     </main>
   )
 }

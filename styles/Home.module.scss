@@ -2,13 +2,50 @@
   grid-column: center-start / center-end;
   display: flex;
   flex-direction: column;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.main_section {
+  ul {
+    margin: 1.2rem 4rem;
+  }
+}
+
+.title {
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  font-size: 1.6rem;
 }
 
 .twin_section {
   display: flex;
   flex-direction: row;
 
-  p {
-    margin: 1.2rem;
+  div {
+    width: 50%;
+    padding: 0 2rem;
+  }
+
+  div:first-of-type {
+    margin-left: 1.6rem;
+
+    li:first-of-type {
+      text-decoration: underline;
+    }
+  }
+
+  div:last-of-type {
+    margin-right: 1.6rem;
+  }
+
+  h2 {
+    min-height: 4rem;
+    span {
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
   }
 }

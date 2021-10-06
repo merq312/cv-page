@@ -8,6 +8,9 @@ const Header = () => (
       <Link href="#">
         <a className={styles.link}>about</a>
       </Link>
+      <Link href="#">
+        <a className={styles.link}>contact</a>
+      </Link>
       <Link href="https://github.com/merq312">
         <a className={styles.link}>github</a>
       </Link>
