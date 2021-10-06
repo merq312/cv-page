@@ -73,8 +73,13 @@ const Home: NextPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
-                  cdcl: C declaration parser that runs on the terminal
+                <a href="https://github.com/merq312/cdecl">
+                  cdecl: C declaration parser that runs on the terminal
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/treeset">
+                  C++ treeset: Binary tree library using smart pointers
                 </a>
               </li>
             </ul>
@@ -90,28 +95,53 @@ const Home: NextPage = () => {
             <ul>
               <li>
                 <a href="https://github.com/merq312/wasm-game-of-life">
-                  wasm-game-of-life: Conway&apos;s game of life that runs on your
-                  browser. Using rust+wasm.
+                  wasm-game-of-life: Conway&apos;s game of life that runs on
+                  your browser. Using rust+wasm.
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://rustwasm.github.io/docs/book/introduction.html"
+                >
+                  {' '}
+                  book
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://crwn-live-merc312.herokuapp.com/">
                   Crwn Clothing: Fictional store website. Made with React,
                   Redux, Firebase
                 </a>
-              </li>
-              <li>
-                <a href="">
-                  Natours: Part of a Node backend course. NodeJS, Express,
-                  MongoDB, implements a REST API
+                <a
+                  className={styles.src_link}
+                  href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
+                >
+                  {' '}
+                  course
                 </a>
               </li>
               <li>
-                <a href="">Nexter: Learning SCSS, CSS</a>
+                <a href="https://github.com/merq312/natours-app">
+                  Natours: Part of a Node backend course. NodeJS, Express,
+                  MongoDB, implements a REST API
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
+                >
+                  {' '}
+                  course
+                </a>
               </li>
               <li>
-                <a href="">
-                  C++ treeset: Binary tree library using smart pointers
+                <a href="https://merq312.github.io/fuzzy-disco/">
+                  Nexter: Learning SCSS, CSS (Grid and Flexbox)
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://www.udemy.com/course/advanced-css-and-sass/"
+                >
+                  {' '}
+                  course
                 </a>
               </li>
             </ul>
@@ -144,6 +174,4 @@ export default Home
 
 // TODO
 // Mobile media queries
-// Host the missing projects
 // Put something in the footer
-// Link the sources for courses
