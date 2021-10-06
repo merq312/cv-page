@@ -8,7 +8,7 @@ const Header = () => (
       <Link href="#">
         <a className={styles.link}>about</a>
       </Link>
-      <Link href="#">
+      <Link href="#contact">
         <a className={styles.link}>contact</a>
       </Link>
       <Link href="https://github.com/merq312">

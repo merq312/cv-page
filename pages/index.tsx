@@ -46,23 +46,36 @@ const Home: NextPage = () => {
           <p>
             <ul>
               <li>
-                <a href="https://github.com/merq312/cv-page">This website!</a>
+                <a href="https://github.com/merq312/cv-page">
+                  <span>This website</span>: made on NextJS, with Typescript and
+                  SCSS.
+                </a>
               </li>
               <li>
                 <a href="https://github.com/merq312/wasm-mandelbrot">
-                  wasm-mandelbrot
+                  wasm-mandelbrot: A Mandelbrot fractal generator that runs on
+                  your browser. Using rust+wasm.
                 </a>
               </li>
               <li>
                 <a href="https://github.com/merq312/qt_music_player">
-                  qt-music player
+                  qt-music player: Desktop music player written in
+                  C++/Qt/SQLite. Stores yours music library metadata (artists,
+                  albums, album art, etc.), album art view, drag and drop
+                  playlists.
                 </a>
               </li>
               <li>
-                <a href="https://github.com/merq312/pizza-stack">pizza-stack</a>
+                <a href="https://github.com/merq312/pizza-stack">
+                  pizza-stack: Website for a fictional store. Made on NextJS
+                  with Redux for state management and Magic Auth for
+                  authentication.{' '}
+                </a>
               </li>
               <li>
-                <a href="#">cdcl (c declaration parser)</a>
+                <a href="#">
+                  cdcl: C declaration parser that runs on the terminal
+                </a>
               </li>
             </ul>
           </p>
@@ -77,27 +90,52 @@ const Home: NextPage = () => {
             <ul>
               <li>
                 <a href="https://github.com/merq312/wasm-game-of-life">
-                  wasm-game-of-life
+                  wasm-game-of-life: Conway's game of life that runs on your
+                  browser. Using rust+wasm.
                 </a>
               </li>
               <li>
-                <a href="">crwn clothing</a>
+                <a href="">
+                  Crwn Clothing: Fictional store website. Made with React,
+                  Redux, Firebase
+                </a>
               </li>
               <li>
-                <a href="">natours</a>
+                <a href="">
+                  Natours: Part of a Node backend course. NodeJS, Express,
+                  MongoDB
+                </a>
               </li>
               <li>
-                <a href="">nexter</a>
+                <a href="">Nexter: Learning SCSS, CSS</a>
               </li>
               <li>
-                <a href="">c++ treeset</a>
+                <a href="">
+                  C++ treeset: Binary tree library using smart pointers
+                </a>
               </li>
             </ul>
           </p>
         </div>
       </div>
-      <h1 className={styles.title}>Academic Record</h1>
-      <p>Soon™️</p>
+      <div className={styles.academic_section}>
+        <h1 className={styles.title}>Academic Record</h1>
+        <div className={styles.list_item}>
+          <div className={styles.course}>
+            IT Business Analysis Graduate Certificate
+          </div>
+          <div className={styles.college}>Cambrian College</div>
+          <div className={styles.highlights}>President's Honor Roll</div>
+        </div>
+        <div className={styles.list_item}>
+          <div className={styles.course}>Bachelor of Science (Physics)</div>
+          <div className={styles.college}>University of Wollongong</div>
+          <div className={styles.highlights}>
+            Internship at Institute for Superconducting & Electronic Materials
+            (ISEM)
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
