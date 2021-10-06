@@ -1,29 +1,14 @@
 .main {
-  padding: 5rem 0;
-  flex: 1;
+  grid-column: center-start / center-end;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.title a {
-  color: #0070f3;
-  text-decoration: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
+.twin_section {
+  display: flex;
+  flex-direction: row;
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  p {
+    margin: 1.2rem;
+  }
 }
