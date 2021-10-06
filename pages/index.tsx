@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           I have <i>some</i> knowledge of Python, Lua, Bash scripting, C, and C#
           (have used these for something or the other).
           <br />
-          I've spent quite sometime with Docker and Linux operating systems
+          I&apos;ve spent quite sometime with Docker and Linux operating systems
           (Arch, Fedora, Ubuntu).
           <br />
           I have a degree in Physics (LaTeX, Matlab, lots of math, computational
