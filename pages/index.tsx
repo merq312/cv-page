@@ -150,6 +150,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+
       <div className={styles.academic_section}>
         <h1 className={styles.title}>Academic Record</h1>
         <div className={styles.list_item}>

@@ -15,10 +15,25 @@
     font-size: 3rem;
   }
 
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .content {
-    margin: 3rem 6rem;
+    margin: 3rem 0rem;
     max-width: 45vw;
-    text-align: center;
+    width: 30%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      padding: 0.4rem 0;
+    }
   }
 }
 
@@ -30,12 +45,26 @@
   margin: 2rem 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .footer {
     flex-direction: column;
 
     .content {
       margin: 1rem 0;
+      width: 100%;
+
+      flex-direction: column;
+      text-align: center;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+        list-style: none;
+        padding: 0 1rem;
+      }
     }
   }
   .vert_line {

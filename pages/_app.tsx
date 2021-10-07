@@ -17,10 +17,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
 
-      <div className="content">
+      <div className="container">
         <Header />
 
-        <div className="container">
+        <div className="content">
           <Component {...pageProps} />
         </div>
 
@@ -30,3 +30,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 export default MyApp
+
+/*
+Page div structure
+
+HEAD
+DIV CONTAINER
+  HEADER
+  DIV CONTENT
+    MAIN <-- reusable content goes here
+  FOOTER
+*/
