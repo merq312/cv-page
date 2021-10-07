@@ -20,7 +20,7 @@ const Home: NextPage = () => {
               Typescript, Javascript (NextJS, React, Redux, Node, Express),
             </li>
             <li>C++ (Qt, SDL),</li>
-            <li>MongoDB, SQLite, MySQL</li>
+            <li>MongoDB, SQLite, MySQL,</li>
             <li>HTML, CSS, SCSS.</li>
           </ul>
           I have <i>some</i> knowledge of Python, Lua, Bash scripting, C, and C#
@@ -53,13 +53,13 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <a href="https://github.com/merq312/wasm-mandelbrot">
-                  wasm-mandelbrot: A Mandelbrot fractal generator that runs on
-                  your browser. Using rust+wasm.
+                  <span>wasm-mandelbrot</span>: A Mandelbrot fractal generator
+                  that runs on your browser. Using rust+wasm.
                 </a>
               </li>
               <li>
                 <a href="https://github.com/merq312/qt_music_player">
-                  qt-music player: Desktop music player written in
+                  <span>qt-music player</span>: Desktop music player written in
                   C++/Qt/SQLite. Stores yours music library metadata (artists,
                   albums, album art, etc.), album art view, drag and drop
                   playlists.
@@ -67,19 +67,21 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <a href="https://github.com/merq312/pizza-stack">
-                  pizza-stack: Website for a fictional store. Made on NextJS
-                  with Redux for state management and Magic Auth for
+                  <span>pizza-stack</span>: Website for a fictional store. Made
+                  on NextJS with Redux for state management and Magic Auth for
                   authentication.
                 </a>
               </li>
               <li>
                 <a href="https://github.com/merq312/cdecl">
-                  cdecl: C declaration parser that runs on the terminal
+                  <span>cdecl</span>: C declaration parser that runs on the
+                  terminal
                 </a>
               </li>
               <li>
                 <a href="https://github.com/merq312/treeset">
-                  C++ treeset: Binary tree library using smart pointers
+                  <span>C++ treeset</span>: Binary tree library using smart
+                  pointers
                 </a>
               </li>
             </ul>
@@ -95,8 +97,8 @@ const Home: NextPage = () => {
             <ul>
               <li>
                 <a href="https://github.com/merq312/wasm-game-of-life">
-                  wasm-game-of-life: Conway&apos;s game of life that runs on
-                  your browser. Using rust+wasm.
+                  <span>wasm-game-of-life</span>: Conway&apos;s game of life
+                  that runs on your browser. Using rust+wasm.
                 </a>
                 <a
                   className={styles.src_link}
@@ -108,8 +110,8 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <a href="https://crwn-live-merc312.herokuapp.com/">
-                  Crwn Clothing: Fictional store website. Made with React,
-                  Redux, Firebase
+                  <span>Crwn Clothing</span>: Fictional store website. Made with
+                  React, Redux, Firebase
                 </a>
                 <a
                   className={styles.src_link}
@@ -121,8 +123,8 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <a href="https://github.com/merq312/natours-app">
-                  Natours: Part of a Node backend course. NodeJS, Express,
-                  MongoDB, implements a REST API
+                  <span>Natours</span>: Part of a Node backend course. NodeJS,
+                  Express, MongoDB, implements a REST API
                 </a>
                 <a
                   className={styles.src_link}
@@ -134,7 +136,7 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <a href="https://merq312.github.io/fuzzy-disco/">
-                  Nexter: Learning SCSS, CSS (Grid and Flexbox)
+                  <span>Nexter</span>: Learning SCSS, CSS (Grid and Flexbox)
                 </a>
                 <a
                   className={styles.src_link}
@@ -173,5 +175,4 @@ const Home: NextPage = () => {
 export default Home
 
 // TODO
-// Mobile media queries
 // Put something in the footer

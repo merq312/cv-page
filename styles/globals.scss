@@ -35,3 +35,10 @@ a {
     [center-start] repeat(6, [col-start] minmax(min-content, 12rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
 }
+
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 75%;
+  }
+}

@@ -16,10 +16,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className={styles.vert_line}>&nbsp;</div>
-    <div className={styles.content}>
-      Lorem i eos, minus suscipit sit magnam, velit aliquam maiores non tempore
-      assumenda quo officia! Eligendi tempore minima in enim porro nobis.
-    </div>
+    <div className={styles.content}>©️ Chamila Gunasena 2021</div>
   </footer>
 )
 
