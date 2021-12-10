@@ -4,11 +4,14 @@ import styles from '../styles/Home.module.scss'
 const Home: NextPage = () => {
   return (
     <main className={styles.main}>
-      <section>
-        Pre-main
+      <section className={styles.title_section}>
+        <div>
+          <h1>Chamila Gunasena</h1>
+          <span>Full stack web developer</span>
+        </div>
       </section>
 
-      <section>
+      <section className={styles.main_section}>
         Main
       </section>
 
@@ -182,6 +185,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-// TODO
-// Put something in the footer
