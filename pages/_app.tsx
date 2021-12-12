@@ -20,11 +20,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="container">
         <Header />
 
-        <div className="content">
+        <main>
           <Component {...pageProps} />
-        </div>
+        </main>
 
-        {/*<Footer />*/}
+        <Footer />
       </div>
     </>
   )

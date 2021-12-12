@@ -1,9 +1,5 @@
-.main {
-  line-height: 2rem;
-}
-
-.title_section {
-  height: 90vh;
+.pre_main {
+  height: 95vh;
   display: flex;
   justify-content: center;
   background-color: #fafafa;
@@ -15,13 +11,6 @@
     align-items: center;
     font-family: 'Cormorant Garamond', serif;
 
-    h1 {
-      font-weight: 300;
-      font-size: 8rem;
-      margin: 0 0 3rem;
-      white-space: nowrap;
-    }
-
     span {
       font-weight: 700;
       font-size: 1.8rem;
@@ -30,6 +19,86 @@
   }
 }
 
-.main_section {
+.portfolio {
   background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-color: #dedede;
+    padding: 8vh 10rem 6rem 10rem;
+    width: 80vw;
+    transform: translateY(-8vh);
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.main {
+  background-color: #ededed;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  line-height: 1.8;
+  transform: translateY(-6vh);
+}
+
+.skills {
+  grid-column: 4 / 10;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    ul:first-of-type {
+      grid-column: 2/4;
+    }
+
+    ul {
+      grid-column: 4/6;
+      padding-left: 1rem;
+
+      li:before {
+        content: '-';
+        padding-right: 1rem;
+      }
+
+      li {
+        list-style: none;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.education {
+  grid-column: 4 / 10;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  h2 {
+    grid-column: 1/13;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    grid-column: 2/11;
+
+    .college {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

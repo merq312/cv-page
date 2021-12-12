@@ -1,39 +1,41 @@
 .header {
-  //margin-top: 4rem;
-  //margin-bottom: 2rem;
+  height: 5vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  font-size: 1.4rem;
 
-  h1 {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
+  .logo {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    span {
+    }
+
+    span:first-of-type {
+      margin-right: 0.4rem;
+    }
+
+    span:last-of-type {
+      margin-left: 0.4rem;
+    }
   }
 
   .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     .link {
-      font-size: 2rem;
       margin: 0 2rem;
-    }
-
-    .link:first-of-type {
-      text-decoration: underline;
-    }
-  }
-}
-
-@media (max-width: 1100px) {
-  .header {
-    flex-direction: column;
-
-    h1 {
-      text-align: center;
-      margin-bottom: 1.6rem;
     }
   }
 }

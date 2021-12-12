@@ -3,23 +3,129 @@ import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
   return (
-    <main className={styles.main}>
-      <section className={styles.title_section}>
+    <>
+      <section className={styles.pre_main}>
         <div>
           <h1>Chamila Gunasena</h1>
-          <span>Full stack web developer</span>
+          <span>Fullstack web developer</span>
         </div>
       </section>
 
-      <section className={styles.main_section}>
-        Main
+      <section className={styles.portfolio}>
+        <div className={styles.card}>
+          <h2>Portfolio</h2>
+          <div>
+            <ul>
+              <li>
+                <a href="https://github.com/merq312/cv-page">
+                  <span>This website</span>: made on NextJS, with Typescript and
+                  SCSS.
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/wasm-mandelbrot">
+                  <span>wasm-mandelbrot</span>: A Mandelbrot fractal generator
+                  that runs on your browser. Using rust+wasm.
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/qt_music_player">
+                  <span>qt-music player</span>: Desktop music player written in
+                  C++/Qt/SQLite. Stores yours music library metadata (artists,
+                  albums, album art, etc.), album art view, drag and drop
+                  playlists.
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/pizza-stack">
+                  <span>pizza-stack</span>: Website for a fictional store. Made
+                  on NextJS with Redux for state management and Magic Auth for
+                  authentication.
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/cdecl">
+                  <span>cdecl</span>: C declaration parser that runs on the
+                  terminal
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/merq312/treeset">
+                  <span>C++ treeset</span>: Binary tree library using smart
+                  pointers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.main}>
+        <section className={styles.skills}>
+          <h2>About</h2>
+
+          <p>
+            I started programming in 2014, writing computational physics
+            simulations in C++ and Python. In 2019 I transitioned to working
+            with web technologies. I specialize in Typescript, Javascript,
+            React, and Express although I have worked with several other&nbsp;
+            <a href="#">languages and frameworks.</a>
+          </p>
+
+          <h3>Web frameworks</h3>
+          <div>
+            <ul>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Express</li>
+              <li>Next.js</li>
+              <li>Tailwindcss</li>
+            </ul>
+            <ul>
+              <li>Styled-Components</li>
+              <li>Prisma ORM</li>
+              <li>Mongoose</li>
+              <li>Socket.io</li>
+              <li>Auth0</li>
+            </ul>
+          </div>
+
+          <h3>Other skills</h3>
+
+          <div>
+            <ul>
+              <li>C++ (Qt, SDL)</li>
+              <li>Rust (Web Assembly)</li>
+            </ul>
+            <ul>
+              <li>Postgres, MongoDB, SQLite</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className={styles.education}>
+          <h2>Education</h2>
+          <div className={styles.card}>
+            <div className={styles.college}>
+              <span>Cambrian College</span>
+              <span>Sudbury, Ontario</span>
+            </div>
+            <div className={styles.course}>
+              IT Business Analysis Graduate Certificate
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.college}>
+              <span>University of Wollongong</span>
+              <span>New South Wales, Australia</span>
+            </div>
+            <div className={styles.course}>Bachelor of Science Physics</div>
+          </div>
+        </section>
       </section>
 
       {/*<div className={styles.main_section}>*/}
-      {/*  <h1 className={styles.title}>...wants to get paid to write software</h1>*/}
-      {/*  <h2 className={styles.subtitle}>*/}
-      {/*    Frontend, backend, and systems programming*/}
-      {/*  </h2>*/}
       {/*  <p>*/}
       {/*    Currently lives in Ontario, Canada 🍁. Previously in Australia 🦘 and*/}
       {/*    Sri Lanka 🐘.*/}
@@ -54,49 +160,6 @@ const Home: NextPage = () => {
       {/*<div className={styles.twin_section}>*/}
       {/*  <div>*/}
       {/*    <h2>Things I made</h2>*/}
-      {/*    <p>*/}
-      {/*      <ul>*/}
-      {/*        <li>*/}
-      {/*          <a href="https://github.com/merq312/cv-page">*/}
-      {/*            <span>This website</span>: made on NextJS, with Typescript and*/}
-      {/*            SCSS.*/}
-      {/*          </a>*/}
-      {/*        </li>*/}
-      {/*        <li>*/}
-      {/*          <a href="https://github.com/merq312/wasm-mandelbrot">*/}
-      {/*            <span>wasm-mandelbrot</span>: A Mandelbrot fractal generator*/}
-      {/*            that runs on your browser. Using rust+wasm.*/}
-      {/*          </a>*/}
-      {/*        </li>*/}
-      {/*        <li>*/}
-      {/*          <a href="https://github.com/merq312/qt_music_player">*/}
-      {/*            <span>qt-music player</span>: Desktop music player written in*/}
-      {/*            C++/Qt/SQLite. Stores yours music library metadata (artists,*/}
-      {/*            albums, album art, etc.), album art view, drag and drop*/}
-      {/*            playlists.*/}
-      {/*          </a>*/}
-      {/*        </li>*/}
-      {/*        <li>*/}
-      {/*          <a href="https://github.com/merq312/pizza-stack">*/}
-      {/*            <span>pizza-stack</span>: Website for a fictional store. Made*/}
-      {/*            on NextJS with Redux for state management and Magic Auth for*/}
-      {/*            authentication.*/}
-      {/*          </a>*/}
-      {/*        </li>*/}
-      {/*        <li>*/}
-      {/*          <a href="https://github.com/merq312/cdecl">*/}
-      {/*            <span>cdecl</span>: C declaration parser that runs on the*/}
-      {/*            terminal*/}
-      {/*          </a>*/}
-      {/*        </li>*/}
-      {/*        <li>*/}
-      {/*          <a href="https://github.com/merq312/treeset">*/}
-      {/*            <span>C++ treeset</span>: Binary tree library using smart*/}
-      {/*            pointers*/}
-      {/*          </a>*/}
-      {/*        </li>*/}
-      {/*      </ul>*/}
-      {/*    </p>*/}
       {/*  </div>*/}
       {/*  <div>*/}
       {/*    <h2>*/}
@@ -180,7 +243,7 @@ const Home: NextPage = () => {
       {/*    </div>*/}
       {/*  </div>*/}
       {/*</div>*/}
-    </main>
+    </>
   )
 }
 

@@ -2,72 +2,68 @@
   background-color: #1e1e1e;
   color: #545454;
 
+  font-size: 2rem;
+
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
-  font-size: 1.2rem;
+  //font-size: 1.2rem;
 
-  h1 {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 3rem;
-  }
-
-  a {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .content {
-    margin: 3rem 0rem;
-    max-width: 45vw;
-    width: 30%;
-
+  .links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    height: 10rem;
+    width: 20vw;
 
-    li {
-      padding: 0.4rem 0;
-    }
-  }
-}
+    a {
+      background-color: #1e1e1e;
+      border-radius: 100rem;
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      align-items: center;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
 
-.vert_line {
-  display: block;
-  background-color: #343434;
-  width: 2px;
-  height: 12rem;
-  margin: 2rem 0;
-}
-
-@media (max-width: 900px) {
-  .footer {
-    flex-direction: column;
-
-    .content {
-      margin: 1rem 0;
-      width: 100%;
-
-      flex-direction: column;
-      text-align: center;
-
-      ul {
-        padding: 0;
+      .icon {
+        height: 3rem;
+        width: 3rem;
+        margin: 0 auto;
+        color: #545454;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
       }
 
-      li {
-        display: inline;
-        list-style: none;
-        padding: 0 1rem;
+      &:hover {
+        background-color: #ededed;
+
+        .icon {
+          color: #1e1e1e;
+        }
       }
     }
   }
-  .vert_line {
-    display: none;
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    width: 100%;
+
+    .icon {
+      height: 1.4rem;
+      width: 1.4rem;
+      margin-right: 0.5rem;
+    }
+
+    .line {
+      height: 1px;
+      flex-grow: 1;
+      background-color: #545454;
+      margin: 0 1rem;
+    }
   }
+
 }
