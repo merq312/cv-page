@@ -5,20 +5,19 @@ function Education() {
     <section className={styles.education}>
       <h2>Education</h2>
       <div className={styles.card}>
-        <div className={styles.college}>
-          <span>Cambrian College</span>
-          <span>Sudbury, Ontario</span>
-        </div>
-        <div className={styles.course}>
-          IT Business Analysis Graduate Certificate
-        </div>
+        <span>IT Business Analysis Graduate Certificate</span>
+        <span>Cambrian College</span>
+        <span>President&apos;s Honor Roll</span>
+        <span>Sudbury, Ontario</span>
       </div>
       <div className={styles.card}>
-        <div className={styles.college}>
-          <span>University of Wollongong</span>
-          <span>New South Wales, Australia</span>
-        </div>
-        <div className={styles.course}>Bachelor of Science Physics</div>
+        <span>Bachelor of Science Physics</span>
+        <span>University of Wollongong</span>
+        <span>
+          Internship at Institute for Superconducting & Electronic Materials
+          (ISEM)
+        </span>
+        <span>New South Wales, Australia</span>
       </div>
     </section>
   )

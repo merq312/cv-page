@@ -1,20 +1,30 @@
 .education {
   grid-column: 4 / 10;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
 
   h2 {
-    grid-column: 1/13;
-    justify-self: center;
+    text-align: center;
     margin-bottom: 2rem;
   }
 
   .card {
-    grid-column: 2/11;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
 
-    .college {
-      display: flex;
-      justify-content: space-between;
+    span:nth-child(2n) {
+      justify-self: end;
+    }
+
+    span:nth-child(1) {
+      font-weight: bold;
+    }
+
+    span:nth-child(2) {
+      font-weight: bold;
+    }
+
+    span:nth-child(3) {
+      font-style: italic;
     }
   }
 }
