@@ -1,10 +1,24 @@
 import styles from './Portfolio.module.scss'
+import Image from 'next/image'
+import { useState } from 'react'
 
 type AppProps = {
   bgColor: boolean
 }
 
+enum ImageName {
+  cv = '/cv.png',
+  pizzaStack = '/pizza-stack.png',
+  inventory = '/inventory.png',
+  mandelbrot = '/mandelbrot.png',
+  transmitter = '/transmitter.png',
+  null = 'null',
+  hover = 'hover',
+}
+
 function Portfolio({ bgColor }: AppProps) {
+  const [currentImg, setCurrentImg] = useState<ImageName>(ImageName.hover)
+
   return (
     <section className={styles.portfolio}>
       <div
@@ -15,7 +29,7 @@ function Portfolio({ bgColor }: AppProps) {
         <h2>Portfolio</h2>
         <div className={styles.projects_primary}>
           <ul>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.inventory)}>
               <a href="https://github.com/merq312/inventory-fullstack">
                 <span>Inventory tracker</span>: A full-stack product tracking
                 solution for a company I worked for. Designed as a React webapp
@@ -23,26 +37,33 @@ function Portfolio({ bgColor }: AppProps) {
                 MaterialUI.
               </a>
             </li>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.transmitter)}>
               <a href="https://github.com/merq312/instant-messenger">
                 <span>Transmitter</span>: An instant messenger. User and guest
                 accounts, private chatrooms, and more. Uses Socket.IO for
-                websockets. React, Redux, TailwindCss, Express.
+                websockets. React, Redux, Tailwindcss, Express.
               </a>
             </li>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.cv)}>
               <a href="https://github.com/merq312/cv-page">
                 <span>This website</span>: made on NextJS, with Typescript and
                 SCSS.
               </a>
             </li>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.mandelbrot)}>
               <a href="https://github.com/merq312/wasm-mandelbrot">
                 <span>wasm-mandelbrot</span>: A Mandelbrot fractal generator
                 that runs on your browser. Using rust+wasm.
               </a>
             </li>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.pizzaStack)}>
+              <a href="https://github.com/merq312/pizza-stack">
+                <span>pizza-stack</span>: Website for a fictional store. Made on
+                NextJS with Redux for state management and Magic Auth for
+                authentication.
+              </a>
+            </li>
+            <li onMouseOver={() => setCurrentImg(ImageName.null)}>
               <a href="https://github.com/merq312/qt_music_player">
                 <span>Qt Music Player</span>: Desktop music player written in
                 C++/Qt/SQLite. Stores yours music library metadata (artists,
@@ -50,27 +71,39 @@ function Portfolio({ bgColor }: AppProps) {
                 playlists.
               </a>
             </li>
-            <li>
-              <a href="https://github.com/merq312/pizza-stack">
-                <span>pizza-stack</span>: Website for a fictional store. Made on
-                NextJS with Redux for state management and Magic Auth for
-                authentication.
-              </a>
-            </li>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.null)}>
               <a href="https://github.com/merq312/cdecl">
                 <span>cdecl</span>: C declaration parser that runs on the
                 terminal
               </a>
             </li>
-            <li>
+            <li onMouseOver={() => setCurrentImg(ImageName.null)}>
               <a href="https://github.com/merq312/treeset">
                 <span>C++ treeset</span>: Binary tree library using smart
                 pointers
               </a>
             </li>
           </ul>
-          <div className={styles.img}>IMAGE</div>
+
+          <div className={styles.img}>
+            {currentImg === 'null' ? (
+              <div className={styles.null_image}>
+                <span>No image available</span>
+              </div>
+            ) : currentImg === 'hover' ? (
+              <div className={styles.null_image}>
+                <span>Hover project to see a preview</span>
+              </div>
+            ) : (
+              <Image
+                src={currentImg}
+                width="1920"
+                height="965"
+                alt="project screenshot"
+                priority={true}
+              />
+            )}
+          </div>
         </div>
         <div className={styles.projects_secondary}>
           <div>Learning projects</div>

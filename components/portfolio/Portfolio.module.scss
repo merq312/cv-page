@@ -37,7 +37,7 @@
       align-items: center;
 
       ul {
-        width: 60%;
+        width: 50%;
       }
 
       a {
@@ -49,9 +49,21 @@
       }
 
       .img {
-        width: 40%;
-        background-color: orangered;
+        width: 45%;
+
+        & > * {
+          box-shadow: 0.6rem 1rem 5rem rgba(0,0,0,0.6);
+        }
+      }
+
+      .null_image {
+        background: #bcbcbc;
         height: 20rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #545454;
       }
     }
   }
