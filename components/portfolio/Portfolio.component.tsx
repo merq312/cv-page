@@ -1,9 +1,17 @@
 import styles from './Portfolio.module.scss'
 
-function Portfolio() {
+type AppProps = {
+  bgColor: boolean
+}
+
+function Portfolio({ bgColor }: AppProps) {
   return (
     <section className={styles.portfolio}>
-      <div className={styles.card}>
+      <div
+        className={`${styles.card} ${
+          bgColor ? styles.card_active : styles.card_inactive
+        }`}
+      >
         <h2>Portfolio</h2>
         <div className={styles.projects_primary}>
           <ul>
@@ -65,57 +73,53 @@ function Portfolio() {
           <div className={styles.img}>IMAGE</div>
         </div>
         <div className={styles.projects_secondary}>
-          <div>More projects</div>
+          <div>Learning projects</div>
 
           <ul>
             <li>
               <a href="https://github.com/merq312/wasm-game-of-life">
                 <span>wasm-game-of-life</span>: Conway&apos;s game of life that
-                runs on your browser. Using rust+wasm.
+                runs on your browser. Using rust+wasm.&nbsp;
               </a>
               <a
                 className={styles.src_link}
                 href="https://rustwasm.github.io/docs/book/introduction.html"
               >
-                {' '}
                 book
               </a>
             </li>
             <li>
               <a href="https://crwn-live-merc312.herokuapp.com/">
                 <span>Crwn Clothing</span>: Fictional store website. Made with
-                React, Redux, Firebase
+                React, Redux, Firebase&nbsp;
               </a>
               <a
                 className={styles.src_link}
                 href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
               >
-                {' '}
                 course
               </a>
             </li>
             <li>
               <a href="https://github.com/merq312/natours-app">
                 <span>Natours</span>: Part of a Node backend course. NodeJS,
-                Express, MongoDB, implements a REST API
+                Express, MongoDB, implements a REST API&nbsp;
               </a>
               <a
                 className={styles.src_link}
                 href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
               >
-                {' '}
                 course
               </a>
             </li>
             <li>
               <a href="https://merq312.github.io/fuzzy-disco/">
-                <span>Nexter</span>: Learning SCSS, CSS (Grid and Flexbox)
+                <span>Nexter</span>: Learning SCSS, CSS (Grid and Flexbox)&nbsp;
               </a>
               <a
                 className={styles.src_link}
                 href="https://www.udemy.com/course/advanced-css-and-sass/"
               >
-                {' '}
                 course
               </a>
             </li>

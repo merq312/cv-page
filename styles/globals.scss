@@ -12,11 +12,6 @@ a {
   color: inherit;
   text-decoration: none;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
-
-  &:hover,
-  &:active {
-    text-decoration: underline;
-  }
 }
 
 * {
