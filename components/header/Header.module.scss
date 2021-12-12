@@ -18,14 +18,13 @@
     }
 
     span {
-    }
+      &:first-of-type {
+        margin-right: 0.4rem;
+      }
 
-    span:first-of-type {
-      margin-right: 0.4rem;
-    }
-
-    span:last-of-type {
-      margin-left: 0.4rem;
+      &:last-of-type {
+        margin-left: 0.4rem;
+      }
     }
   }
 

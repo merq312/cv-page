@@ -1,7 +1,7 @@
 import '../styles/globals.scss'
 import Head from 'next/head'
-import Header from '../components/header/header.component'
-import Footer from '../components/footer/footer.component'
+import Header from '../components/header/Header.component'
+import Footer from '../components/footer/Footer.component'
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -37,7 +37,6 @@ Page div structure
 HEAD
 DIV CONTAINER
   HEADER
-  DIV CONTENT
-    MAIN <-- reusable content goes here
+  MAIN <-- reusable content goes here
   FOOTER
 */

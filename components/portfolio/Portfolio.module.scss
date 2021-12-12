@@ -1,0 +1,41 @@
+.portfolio {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-color: #dedede;
+    padding: 8vh 10rem 6rem 10rem;
+    width: 80vw;
+    transform: translateY(-8vh);
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .projects_primary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        width: 60%;
+      }
+
+      .img {
+        width: 40%;
+        background-color: orangered;
+        height: 20rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import styles from './header.module.scss'
+import styles from './Header.module.scss'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCanadianMapleLeaf } from '@fortawesome/free-brands-svg-icons'
