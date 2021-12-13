@@ -148,60 +148,69 @@ function Portfolio({ bgColor }: AppProps) {
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faChevronRight} />
               </div>
-              <a href="https://github.com/merq312/wasm-game-of-life">
-                <span>wasm-game-of-life</span>: Conway&apos;s game of life that
-                runs on your browser. Using rust+wasm.&nbsp;
-              </a>
-              <a
-                className={styles.src_link}
-                href="https://rustwasm.github.io/docs/book/introduction.html"
-              >
-                book
-              </a>
+              <div>
+                <a href="https://github.com/merq312/wasm-game-of-life">
+                  <span>wasm-game-of-life</span>: Conway&apos;s game of life
+                  that runs on your browser. Using rust+wasm.&nbsp;
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://rustwasm.github.io/docs/book/introduction.html"
+                >
+                  book
+                </a>
+              </div>
             </li>
             <li>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faChevronRight} />
               </div>
-              <a href="https://crwn-live-merc312.herokuapp.com/">
-                <span>Crwn Clothing</span>: Fictional store website. Made with
-                React, Redux, Firebase&nbsp;
-              </a>
-              <a
-                className={styles.src_link}
-                href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
-              >
-                course
-              </a>
+              <div>
+                <a href="https://crwn-live-merc312.herokuapp.com/">
+                  <span>Crwn Clothing</span>: Fictional store website. Made with
+                  React, Redux, Firebase&nbsp;
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
+                >
+                  course
+                </a>
+              </div>
             </li>
             <li>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faChevronRight} />
               </div>
-              <a href="https://github.com/merq312/natours-app">
-                <span>Natours</span>: Part of a Node backend course. NodeJS,
-                Express, MongoDB, implements a REST API&nbsp;
-              </a>
-              <a
-                className={styles.src_link}
-                href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
-              >
-                course
-              </a>
+              <div>
+                <a href="https://github.com/merq312/natours-app">
+                  <span>Natours</span>: Part of a Node backend course. NodeJS,
+                  Express, MongoDB, implements a REST API&nbsp;
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
+                >
+                  course
+                </a>
+              </div>
             </li>
             <li>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faChevronRight} />
               </div>
-              <a href="https://merq312.github.io/fuzzy-disco/">
-                <span>Nexter</span>: Learning SCSS, CSS (Grid and Flexbox)&nbsp;
-              </a>
-              <a
-                className={styles.src_link}
-                href="https://www.udemy.com/course/advanced-css-and-sass/"
-              >
-                course
-              </a>
+              <div>
+                <a href="https://merq312.github.io/fuzzy-disco/">
+                  <span>Nexter</span>: Learning SCSS, CSS (Grid and
+                  Flexbox)&nbsp;
+                </a>
+                <a
+                  className={styles.src_link}
+                  href="https://www.udemy.com/course/advanced-css-and-sass/"
+                >
+                  course
+                </a>
+              </div>
             </li>
           </ul>
         </div>

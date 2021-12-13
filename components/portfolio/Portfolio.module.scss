@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .chevron {
       height: 4vh;
       width: 4vh;
@@ -48,8 +49,11 @@
     ul {
       list-style: none;
       padding: 0;
+
       li {
         display: flex;
+        margin-bottom: 1rem;
+
         .icon {
           display: flex;
           align-self: start;
@@ -57,43 +61,43 @@
           align-items: center;
           margin-right: 1rem;
           padding-top: 0.6rem;
+
           & > * {
             height: 1.2rem;
             width: 1.2rem;
           }
         }
-        margin-bottom: 1rem;
+      }
+    }
+
+    a {
+      &:hover {
+        span {
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, lightcoral 50%);
+        }
       }
     }
 
     .projects_primary {
-      display: flex;
-      justify-content: space-between;
+      //display: flex;
+      //justify-content: space-between;
+      //align-items: center;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
+      gap: 5%;
 
-      ul {
-        width: 50%;
-      }
-
-      a {
-        &:hover {
-          span {
-            background: linear-gradient(180deg,rgba(255,255,255,0) 50%, lightcoral 50%);
-          }
-        }
-      }
 
       .img {
-        width: 45%;
-
         & > * {
-          box-shadow: 0.6rem 1rem 5rem rgba(0,0,0,0.6);
+          box-shadow: 0.6rem 1rem 5rem rgba(0, 0, 0, 0.6);
         }
       }
 
       .null_image {
         background: #bcbcbc;
-        height: 20rem;
+        aspect-ratio: 2;
 
         display: flex;
         justify-content: center;
@@ -101,10 +105,25 @@
         color: #545454;
       }
     }
+
+    @media (max-width: 1200px) {
+      .projects_primary {
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
+
+        ul {
+          grid-row: 2;
+        }
+        .img {
+          grid-row: 1;
+        }
+      }
+    }
+
   }
 }
 
 .src_link {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, lightcoral 50%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, lightcoral 50%);
   padding: 0 2px;
 }
