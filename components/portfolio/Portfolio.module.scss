@@ -79,10 +79,6 @@
     }
 
     .projects_primary {
-      //display: flex;
-      //justify-content: space-between;
-      //align-items: center;
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -105,21 +101,43 @@
         color: #545454;
       }
     }
+  }
 
-    @media (max-width: 1200px) {
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    .card {
+      padding: 0 2rem 6rem 2rem;
+
+      .projects_primary {
+        gap: 0;
+
+        .img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio {
+    .card {
       .projects_primary {
         grid-template-columns: 1fr;
-        margin-bottom: 4rem;
+        gap: 0;
 
         ul {
           grid-row: 2;
         }
+
         .img {
           grid-row: 1;
+          margin-bottom: 1rem;
         }
       }
     }
-
   }
 }
 

@@ -44,3 +44,15 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+    height: 5vh;
+    font-size: 2.4rem;
+    flex-direction: column;
+    justify-content: center;
+    .logo {
+      display: none;
+    }
+  }
+}

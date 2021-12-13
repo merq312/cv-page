@@ -14,5 +14,21 @@
     ul {
       grid-column: 4/6;
     }
+
+    @media (max-width: 1200px) {
+      ul:first-of-type {
+        grid-column: 1/4;
+      }
+
+      ul {
+        grid-column: 4/7;
+      }
+    }
+
+  }
+}
+@media (max-width: 1200px) {
+  .skills {
+    grid-column: 2/12;
   }
 }

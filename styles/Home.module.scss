@@ -19,6 +19,23 @@
   }
 }
 
+@media (max-width: 600px) {
+  .pre_main {
+    h1 {
+      white-space: break-spaces;
+      margin: 0 4rem;
+    }
+    div {
+      span {
+        margin: 2rem 6rem;
+        align-self: start;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+
 .main {
   background-color: #ededed;
   display: grid;
