@@ -1,0 +1,20 @@
+.list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    white-space: nowrap;
+    display: flex;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      & > * {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+  }
+}

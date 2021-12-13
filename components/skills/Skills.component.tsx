@@ -1,4 +1,5 @@
 import styles from './Skills.module.scss'
+import CustomListComponent from '../custom-list/CustomList.component'
 
 function Skills() {
   return (
@@ -29,34 +30,26 @@ function Skills() {
       </p>
 
       <h3>Web frameworks</h3>
-      <div>
-        <ul>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Express</li>
-          <li>Next.js</li>
-          <li>Tailwindcss</li>
-        </ul>
-        <ul>
-          <li>Styled-Components</li>
-          <li>Prisma ORM</li>
-          <li>Mongoose</li>
-          <li>Socket.io</li>
-          <li>Auth0</li>
-        </ul>
+      <div className={styles.list_container}>
+        <CustomListComponent
+          items={[
+            'React',
+            'Redux',
+            'Next.js',
+            'Tailwindcss',
+            'Styled-Components',
+          ]}
+        />
+        <CustomListComponent
+          items={['Prisma ORM', 'Mongoose', 'Socket.io', 'Auth0']}
+        />
       </div>
 
       <h3>Other skills</h3>
 
-      <div>
-        <ul>
-          <li>C++ (Qt, SDL)</li>
-          <li>Rust (Web Assembly)</li>
-        </ul>
-        <ul>
-          <li>Postgres, MongoDB, SQLite</li>
-          <li>Docker</li>
-        </ul>
+      <div className={styles.list_container}>
+        <CustomListComponent items={['C++ (Qt, SDL)', 'Rust (Web Assembly)']} />
+        <CustomListComponent items={['Postgres, MongoDB, SQLite', 'Docker']} />
       </div>
     </section>
   )
