@@ -20,9 +20,9 @@ function Skills() {
         trade (git, bash, npm, and so on.).
       </p>
       <p>
-        I have some experience with pair/mob programming, agile development, the
-        software development life cycle, business process re-engineering, and
-        software project management.
+        I have some experience with test driven development, pair/mob
+        programming, agile development, the software development life cycle,
+        business process re-engineering, and software project management.
       </p>
       <p>
         I am a long term Linux user and I am quite comfortable with using and

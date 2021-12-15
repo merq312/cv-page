@@ -13,13 +13,13 @@ const Header = () => (
       <span>Canada</span>
     </div>
     <div className={styles.links}>
-      <Link href="#">
+      <Link href="https://github.com/merq312/">
         <a className={styles.link}>Github</a>
       </Link>
-      <Link href="#">
+      <Link href="mailto:merc312@gmail.com">
         <a className={styles.link}>Email</a>
       </Link>
-      <Link href="#">
+      <Link href="https://www.linkedin.com/in/chamila-gunasena-196a9220b/">
         <a className={styles.link}>LinkedIn</a>
       </Link>
     </div>
