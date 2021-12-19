@@ -1,0 +1,50 @@
+[
+  {
+    "link": "https://github.com/merq312/inventory-fullstack",
+    "title": "Inventory tracker",
+    "body": "A full-stack product tracking solution for a company I worked for. Designed as a React webapp with a REST API backend using Express and Postgres. Styled using MaterialUI.",
+    "image": "/inventory.png"
+  },
+  {
+    "link": "https://github.com/merq312/instant-messenger",
+    "title": "Transmitter",
+    "body": "An instant messenger. User and guest accounts, private chatrooms, and more. Uses Socket.IO for websockets. React, Redux, Tailwindcss, Express.",
+    "image": "/transmitter.png"
+  },
+  {
+    "link": "https://github.com/merq312/cv-page",
+    "title": "This website",
+    "body": "made on NextJS, with Typescript and SCSS.",
+    "image": "/cv.png"
+  },
+  {
+    "link": "https://github.com/merq312/wasm-mandelbrot",
+    "title": "wasm-mandelbrot",
+    "body": "A Mandelbrot fractal generator that runs on your browser. Using rust+wasm.",
+    "image": "/mandelbrot.png"
+  },
+  {
+    "link": "https://github.com/merq312/pizza-stack",
+    "title": "pizza-stack",
+    "body": "Website for a fictional store. Made on NextJS with Redux for state management and Magic Auth for authentication.",
+    "image": "/pizza-stack.png"
+  },
+  {
+    "link": "https://github.com/merq312/qt_music_player",
+    "title": "Qt Music Player",
+    "body": "Desktop music player written in C++/Qt/SQLite. Stores yours music library metadata (artists, albums, album art, etc.), album art view, drag and drop playlists.",
+    "image": "null"
+  },
+  {
+    "link": "https://github.com/merq312/cdecl",
+    "title": "cdecl",
+    "body": "C declaration parser that runs on the terminal",
+    "image": "null"
+  },
+  {
+    "link": "https://github.com/merq312/treeset",
+    "title": "C++ treeset",
+    "body": "Binary tree library using smart pointers",
+    "image": "null"
+  }
+]
