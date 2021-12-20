@@ -73,7 +73,7 @@
     .project_item {
       &:hover {
         span {
-          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, lightcoral 50%);
+          text-decoration: underline;
         }
       }
     }
@@ -109,6 +109,7 @@
   .portfolio {
     .card {
       padding: 0 2rem 6rem 2rem;
+      width: 100vw;
 
       .projects_primary {
         gap: 0;

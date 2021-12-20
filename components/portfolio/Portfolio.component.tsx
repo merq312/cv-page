@@ -68,7 +68,7 @@ function Portfolio({ bgColor }: AppProps) {
           </div>
         </div>
         <div className={styles.projects_secondary}>
-          <div>Learning projects</div>
+          <h3>Learning projects</h3>
           <ul>
             {moreProjects.map((ea) => (
               <li key={ea.title}>

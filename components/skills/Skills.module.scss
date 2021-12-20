@@ -24,7 +24,12 @@
         grid-column: 4/7;
       }
     }
+  }
 
+  p {
+    a {
+      text-decoration: underline;
+    }
   }
 }
 @media (max-width: 1200px) {

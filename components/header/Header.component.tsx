@@ -6,11 +6,9 @@ import { faCanadianMapleLeaf } from '@fortawesome/free-brands-svg-icons'
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.logo}>
-      <span>Ontario</span>
       <div>
         <FontAwesomeIcon icon={faCanadianMapleLeaf} />
       </div>
-      <span>Canada</span>
     </div>
     <div className={styles.links}>
       <Link href="https://github.com/merq312/">
