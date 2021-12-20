@@ -1,12 +1,14 @@
 [
   {
     "link": "https://github.com/merq312/inventory-fullstack",
+    "live": "https://bentosushi.herokuapp.com/",
     "title": "Inventory tracker",
     "body": "A full-stack product tracking solution for a company I worked for. Designed as a React webapp with a REST API backend using Express and Postgres. Styled using MaterialUI.",
     "image": "/inventory.png"
   },
   {
     "link": "https://github.com/merq312/instant-messenger",
+    "live": "https://pacific-reef-85991.herokuapp.com/",
     "title": "Transmitter",
     "body": "An instant messenger. User and guest accounts, private chatrooms, and more. Uses Socket.IO for websockets. React, Redux, Tailwindcss, Express.",
     "image": "/transmitter.png"
@@ -19,12 +21,14 @@
   },
   {
     "link": "https://github.com/merq312/wasm-mandelbrot",
+    "live": "https://merq312.github.io/wasm-mandelbrot/",
     "title": "wasm-mandelbrot",
     "body": "A Mandelbrot fractal generator that runs on your browser. Using rust+wasm.",
     "image": "/mandelbrot.png"
   },
   {
     "link": "https://github.com/merq312/pizza-stack",
+    "live": "https://pizza-stack-merq312.vercel.app/",
     "title": "pizza-stack",
     "body": "Website for a fictional store. Made on NextJS with Redux for state management and Magic Auth for authentication.",
     "image": "/pizza-stack.png"

@@ -40,8 +40,8 @@ function Portfolio({ bgColor }: AppProps) {
                 </div>
                 <div className={styles.project_item}>
                   <span>{ea.title}</span>: {ea.body}
-                  <ProjectLink buttonText="github" link="{ea.link}" />
-                  <ProjectLink buttonText="live" link="#" />
+                  <ProjectLink buttonText="github" link={ea.link} />
+                  {ea.live && <ProjectLink buttonText="live" link={ea.live} />}
                 </div>
               </li>
             ))}
@@ -77,8 +77,13 @@ function Portfolio({ bgColor }: AppProps) {
                 </div>
                 <div className={styles.project_item}>
                   <span>{ea.title}</span>: {ea.body}
-                  <ProjectLink buttonText={ea.type} link={ea.source} />
-                  <ProjectLink buttonText="github" link="{ea.link}" />
+                  {ea.link && (
+                    <ProjectLink buttonText="github" link={ea.link} />
+                  )}
+                  {ea.live && <ProjectLink buttonText="live" link="#" />}
+                  {ea.source && (
+                    <ProjectLink buttonText={ea.type} link={ea.source} />
+                  )}
                 </div>
               </li>
             ))}

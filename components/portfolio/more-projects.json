@@ -1,13 +1,14 @@
 [
   {
     "link": "https://github.com/merq312/wasm-game-of-life",
+    "live": "https://merq312.github.io/wasm-game-of-life/",
     "title": "wasm-game-of-life",
     "body": "Conway&apos;s game of life that runs on your browser. Using rust+wasm.",
     "source": "https://rustwasm.github.io/docs/book/introduction.html",
     "type": "book"
   },
   {
-    "link": "https://crwn-live-merc312.herokuapp.com/",
+    "live": "https://crwn-live-merc312.herokuapp.com/",
     "title": "Crwn Clothing",
     "body": "Fictional store website. Made with React, Redux, Firebase",
     "source": "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
@@ -21,7 +22,7 @@
     "type": "course"
   },
   {
-    "link": "https://merq312.github.io/fuzzy-disco/",
+    "live": "https://merq312.github.io/fuzzy-disco/",
     "title": "Nexter",
     "body": "Learning SCSS, CSS (Grid and Flexbox)",
     "source": "https://www.udemy.com/course/advanced-css-and-sass/",

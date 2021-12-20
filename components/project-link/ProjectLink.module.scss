@@ -1,0 +1,27 @@
+.buttonLink {
+  border: none;
+  font-family: inherit;
+  border-radius: 100px;
+  background-color: #1e1e1e;
+  color: white;
+  margin-left: 0.4rem;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.buttonLink_github {
+  background-color: #1e1e1e;
+}
+.buttonLink_live {
+  background-color: mediumpurple;
+}
+.buttonLink_course {
+  background-color: darkolivegreen;
+}
