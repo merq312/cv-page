@@ -1,7 +1,10 @@
 .skills {
-  grid-column: 4 / 10;
   display: flex;
   flex-direction: column;
+  width: 60vw;
+  height: 60vh;
+  font-size: 1.8rem;
+  line-height: 1.6;
 
   .list_container {
     display: grid;

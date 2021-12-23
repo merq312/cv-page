@@ -1,45 +1,143 @@
-.pre_main {
-  height: 95vh;
-  display: flex;
-  justify-content: center;
-  background-color: #fafafa;
+.main {
+  position: relative;
 
-  div {
+  .pageLinks {
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
 
-    span {
-      font-weight: 700;
-      font-size: 1.8rem;
-      align-self: end;
+    div {
+      padding-right: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
-}
 
-@media (max-width: 600px) {
-  .pre_main {
-    h1 {
-      white-space: break-spaces;
-      margin: 0 4rem;
-    }
-    div {
-      span {
-        margin: 2rem 6rem;
-        align-self: start;
-        font-size: 2.4rem;
+  .userLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    a {
+      border-radius: 100rem;
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      align-items: center;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
+
+      .icon {
+        height: 3rem;
+        width: 3rem;
+        margin: 0 auto;
+        color: #545454;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
+      }
+
+      &:hover {
+        background-color: #fff;
+
+        .icon {
+          color: #000;
+        }
       }
     }
   }
 }
 
+.wrapper {
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width: 150vw;
+}
 
-.main {
-  background-color: #ededed;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  line-height: 1.8;
-  transform: translateY(-6vh);
+.card {
+  position: absolute;
+  z-index: 10;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: black;
+  padding: 3rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  animation: card 0.4s linear;
+
+  .content {
+    font-size: 1.2rem;
+
+    .backButton {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.marqueeContainer {
+  overflow: hidden;
+  background-color: black;
+  transform: rotate(-45deg) translateY(-30%);
+  font-family: 'Cormorant Garamond', serif;
+
+  .marquee {
+    white-space: nowrap;
+    //overflow: hidden;
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+
+    p {
+      display: inline-block;
+      font-size: 5rem;
+      line-height: 0.6;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      color: #444;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes card {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
