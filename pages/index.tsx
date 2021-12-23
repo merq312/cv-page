@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import styles from '../styles/Home.module.scss'
 import { useState } from 'react'
 import Portfolio from '../components/portfolio/Portfolio.component'
-import Skills from '../components/skills/Skills.component'
+import About from '../components/about/About.component'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -66,7 +66,7 @@ const AboutCard = ({
       <div className={styles.backButton} onClick={() => handleClick('Home')}>
         Go Back
       </div>
-      <Skills />
+      <About />
     </div>
   </div>
 )

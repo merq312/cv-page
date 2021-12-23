@@ -1,9 +1,9 @@
-import styles from './Skills.module.scss'
+import styles from './About.module.scss'
 import CustomListComponent from '../custom-list/CustomList.component'
 
-function Skills() {
+function About() {
   return (
-    <section className={styles.skills}>
+    <section className={styles.about}>
       <h2>About</h2>
 
       <p>
@@ -86,4 +86,4 @@ function Skills() {
   )
 }
 
-export default Skills
+export default About
