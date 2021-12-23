@@ -56,6 +56,13 @@
   display: flex;
   align-items: center;
   width: 150vw;
+
+  @media (max-width: 900px) {
+    width: 200vw;
+  }
+  @media (max-width: 500px) {
+    width: 400vw;
+  }
 }
 
 .card {
@@ -99,8 +106,15 @@
 .marqueeContainer {
   overflow: hidden;
   background-color: black;
-  transform: rotate(-45deg) translateY(-30%);
   font-family: 'Cormorant Garamond', serif;
+  transform: rotate(-45deg) translateY(-35%);
+
+  @media (max-width: 1200px) {
+    transform: rotate(-45deg) translateY(-30%);
+  }
+  @media (max-width: 500px) {
+    transform: rotate(-45deg) translateY(-35%) translateX(0%);
+  }
 
   .marquee {
     white-space: nowrap;

@@ -5,6 +5,10 @@
   font-size: 1.8rem;
   line-height: 1.8;
 
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
+
   h2 {
     text-align: center;
   }
