@@ -92,16 +92,26 @@
     }
   }
 
+  scrollbar-color: #555 black;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
 }
 
-.card::-webkit-scrollbar {
-  display: none;
-}
-
-.card {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
 
 .marqueeContainer {
   overflow: hidden;
