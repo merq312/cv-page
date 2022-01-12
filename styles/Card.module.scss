@@ -18,6 +18,15 @@
 
     .backButton {
       cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-right: 0.4rem;
+        height: 1.6rem;
+        width: 1.6rem;
+        color: #fff;
+      }
 
       &:hover {
         text-decoration: underline;
