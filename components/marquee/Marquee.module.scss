@@ -1,0 +1,43 @@
+.marqueeContainer {
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Cormorant Garamond', serif;
+  transform: rotate(-45deg) translateY(-35%);
+
+  @media (max-width: 1200px) {
+    transform: rotate(-45deg) translateY(-30%);
+  }
+  @media (max-width: 500px) {
+    transform: rotate(-45deg) translateY(-35%) translateX(0%);
+  }
+
+  .marquee {
+    white-space: nowrap;
+    //overflow: hidden;
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+
+    p {
+      display: inline-block;
+      font-size: 5rem;
+      line-height: 0.6;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      color: #444;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

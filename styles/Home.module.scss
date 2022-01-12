@@ -1,22 +1,6 @@
 .main {
   position: relative;
 
-  .pageLinks {
-    font-family: "Cormorant Garamond", serif;
-    margin-top: 1rem;
-    display: flex;
-    font-size: 2rem;
-
-    div {
-      padding-right: 1rem;
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
   .userLinks {
     display: flex;
     justify-content: space-between;
@@ -62,106 +46,5 @@
   }
   @media (max-width: 500px) {
     width: 400vw;
-  }
-}
-
-.card {
-  position: absolute;
-  z-index: 10;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: black;
-  padding: 3rem 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: scroll;
-  animation: card 0.4s linear;
-
-  .content {
-    font-size: 1.2rem;
-
-    .backButton {
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  scrollbar-color: #555 black;
-  scrollbar-width: thin;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: #000;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #555;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background: #888;
-  }
-}
-
-
-.marqueeContainer {
-  overflow: hidden;
-  background-color: black;
-  font-family: 'Cormorant Garamond', serif;
-  transform: rotate(-45deg) translateY(-35%);
-
-  @media (max-width: 1200px) {
-    transform: rotate(-45deg) translateY(-30%);
-  }
-  @media (max-width: 500px) {
-    transform: rotate(-45deg) translateY(-35%) translateX(0%);
-  }
-
-  .marquee {
-    white-space: nowrap;
-    //overflow: hidden;
-    display: inline-block;
-    animation: marquee 30s linear infinite;
-
-    p {
-      display: inline-block;
-      font-size: 5rem;
-      line-height: 0.6;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      color: #444;
-      transition: all 0.2s ease-in;
-
-      &:hover {
-        color: #ccc;
-      }
-    }
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-@keyframes card {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

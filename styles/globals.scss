@@ -35,12 +35,6 @@ a {
   box-sizing: border-box;
 }
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 main {
   flex-grow: 1;
   font-size: 1.6rem;
